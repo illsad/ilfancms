@@ -151,6 +151,17 @@ CREATE  TABLE IF NOT EXISTS `posts` (
 ENGINE = InnoDB;
 
 
+-- -----------------------------------------------------
+-- Table `motor`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `motor` (
+  `motor_id` INT NOT NULL AUTO_INCREMENT ,
+  `motor_merk` VARCHAR(45) NULL ,
+  `motor_number_police` VARCHAR(45) NULL ,
+  PRIMARY KEY (`motor_id`) )
+ENGINE = InnoDB;
+
+
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
